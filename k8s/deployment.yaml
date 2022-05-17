@@ -25,7 +25,7 @@ spec:
         app: ctse-assignment-3
     spec:
       containers:
-      - image: malinduupendra/ctse-assignment-3:654041ed138c0b5b1456aef6c7c26cd7c7308ee2
+      - image: malinduupendra/ctse-assignment-3:v1
         imagePullPolicy: Always
         name: ctse-assignment-3
         resources: {}
