@@ -3,8 +3,7 @@ import { Injectable } from '@nestjs/common';
 @Injectable()
 export class AppService {
   getHello(): string {
-    return 'Hello From Malindu Upendra, Testing Docker & Kubernetes';
-    return 'Hello, I am Malindu Upendra. Testing Docker & Kubernetes';
+    return 'Testing changes on CI/CD pipeline';
   }
 
   getArray(){
