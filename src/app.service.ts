@@ -28,7 +28,7 @@ export class AppService {
 
 
   async getHello() {
-    return "Microservice Upendra Y.A.M"
+    return "Microservice of Upendra Y.A.M"
     //console.log(obj)
   }
 
@@ -37,7 +37,7 @@ export class AppService {
     
     await this.httpService
       .get('http://34.121.43.145:3000/products')
-      .subscribe(async (result) => console.log(this.getProducts(result.data)));
+      .subscribe(async (result) => items = await this.getProducts(result.data));
 
     console.log(items);
     return items;
@@ -56,6 +56,7 @@ export class AppService {
       });
     });
     
+    console.log(finalCartItems);
     return finalCartItems;
   }
 
